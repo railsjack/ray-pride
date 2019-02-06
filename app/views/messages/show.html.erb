@@ -1,0 +1,78 @@
+<p>&nbsp;</p>
+
+
+<%= link_to '< Back to Inbox', messages_path, class: 'btn btn-default' %>
+<p>&nbsp;</p>
+<p>
+  <strong>Viewing message from <%= humanize_phone_number(@last_message.from)  %></strong>
+</p>
+
+<table class="table table-bordered">
+  <tr>
+    <td>
+      From:
+      <% if current_user.phone_number == @last_message.from %>
+        You <br>
+      <% else %>
+        <%=humanize_phone_number(@last_message.from) %> <br>
+      <% end %>
+      <%=humanize_datetime(@last_message.created_at) %>
+    </td>
+    <td>
+      <%=@last_message.content %>
+      &nbsp;&nbsp;
+      <%= link_to 'Delete', @last_message, method: :delete, class: 'btn btn-xs btn-danger pull-right', data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>
+      <%=form_for :message, url: messages_path do |f| %>
+      <table class="table">
+        <tr>
+          <td width="30%">
+            <%=f.label :content, "Your Message:" %>
+            <!--input type="button" value="Send Message" /-->
+            <%=f.submit "Send Message", class: 'btn btn-primary btn-sm' %>
+          </td>
+          <td width="70%">
+            <!--textarea rows="5"></textarea-->
+            <%=f.hidden_field :from, value: current_user.phone_number %>
+
+            <% if @last_message.from == current_user.phone_number %>
+              <%=f.hidden_field :to, value: @last_message.to %>
+            <% else %>
+              <%=f.hidden_field :to, value: @last_message.from %>
+            <% end %>
+
+            <%=f.text_area :content, value: '', class: 'form-control' %>
+          </td>
+        </tr>
+      </table>
+      <% end %>
+    </td>
+  </tr>
+</table>
+
+<h3>Previous messages</h3>
+<table class="table table-bordered">
+  <% @previous_messages.each do |message| %>
+    <tr>
+      <td>
+        From:
+        <% if current_user.phone_number == message.from %>
+          You <br>
+        <% else %>
+          <%=humanize_phone_number(message.from) %> <br>
+        <% end %>
+        <%=humanize_datetime(message.created_at) %>
+      </td>
+      <td>
+        <%=message.content %>
+        &nbsp;&nbsp;
+        <%= link_to 'Delete', message, method: :delete, class: 'pull-right btn btn-xs btn-danger', data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
