@@ -1,0 +1,110 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	/***** Home Content Starts *****/
+	.realtor {margin: 0 0 40px;}
+	.social-container {padding: 35px 0 20px;}
+	.social-outer > p {margin: 23px 0 30px;}
+	/***** Home Content Ends *****/
+	
+}
+@media only screen and (min-width: 768px) {
+	/***** Home Content Starts *****/
+	.footer-container h5.mobile-menu {display: none;}
+	#abg {display: none;}
+	.flashcharts {display: block;}
+	/***** Home Content Ends *****/
+	
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/***** Home Content Starts *****/
+	.realtor { margin: 0 0 18px;}
+	.main-block .calculation-box > h2 {font-size: 20px;line-height: 20px;margin-bottom: 14px;}
+	.main-block .black-block strong { font-size: 12px;}
+	.mort-rates .mort-title { font-size: 15px; line-height: 16px; margin-bottom: 7px;}
+	.cal-right-box h2 {margin: 14px 0;}
+	.realtor img + span { font-size: 14px; line-height: 16px; margin-bottom: 15px;}
+	.realtor p { font-size: 15px;}
+	.footer-container .main-menu ul li a { padding-left: 12px;}
+	.footer-container .main-menu ul li a:before { left: 3px;}
+	.social-container {padding: 25px 0 20px;}
+	.social-outer > p {margin: 20px 0 20px;font-size: 20px;line-height: 22px;}	
+	.social-outer .footer-imgs li { margin-right: 0;}
+	.social-outer .footer-imgs li img {max-width: 90%;}
+	.footer-container .main-menu ul {float: left;}
+	/***** Home Content Ends *****/
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	/***** Home Content Starts *****/
+	.main-block .calculation-box > h2{padding: 12px 15px;margin: 0;font-size: 15px;line-height: 15px;}
+	.main-block .cal-block {margin-top: 0;}
+	.main-block .black-block strong { font-size: 12px;}
+	.calculation-box { padding: 15px 15px 0;}
+	.main-block .cal-left-box { width: 100%;}
+	.calcu-block {margin-bottom: 15px;}
+	.output-param {  margin-bottom: 15px;}
+	.mort-rates .mort-title { font-size: 14px; line-height: 14px; margin-bottom: 7px;}
+	.content-right .cal-right-box h2 {margin: 0;font-size: 14px;line-height: 15px; padding: 0 0 15px;}
+	.google-adv {  margin-bottom: 15px;}
+	.repayment-block .rw-box {margin: 0 0 12px;width: 80%;}
+	.repayment-block .rw-box h3 { margin: 10px 0;}
+	.main-block > h2 {margin: 0; padding: 0 0 15px; text-align: left;font-size:14px;line-height:14px;}
+	.realtor { margin: 0 0 15px;text-align:center;}
+	.realtor img + span { font-size: 12px; line-height: 17px; margin-bottom: 15px;float:none;}
+	.realtor p {font-size: 12px;float:none;}
+	.realtor > img {float: none;width: 13%;}
+	.biweekly-outer .button {text-align: left;}
+	.repayment-block { margin-bottom: 10px;}
+	.cal-right-box {padding-left: 0;width: 100%;}
+	.rw-box .right-cell {width: 24%;}
+	.footer-container .main-menu ul {display: none;float: none;width: 43%;margin:0 auto;}
+	.footer-container .main-menu ul li {border-top: 1px solid #fff; width: 100%;background: none repeat scroll 0 0 #20394c;}
+	.footer-container .main-menu ul li:first-child a {padding-left:19px;}
+	.footer-container h5.mobile-menu {background: url("../images/menu-arrow.png") no-repeat scroll 100% center;color: #ffffff;cursor: pointer;display: block;  float: none;font-size: 15px;margin-bottom: 0;padding: 5px;width: 43%;margin: 0 auto;font-weight: bold;}	
+	.footer-container {padding: 15px 0 10px;}
+	.footer-container .copyright {margin: 0 0 4px;}
+	.flashcharts {display: none;}
+	#abg {display: block;}
+	.social-outer ul.social-links li { width: auto;}
+	.social-container { padding: 15px 0;}
+	.social-outer > p { font-size: 15px;line-height: 16px; margin: 15px 0;}
+	.social-outer .footer-imgs li { margin-bottom: 2px; margin-right: 0;width:50%;}
+	.footer-container { min-height: 0;}
+	.main-block .cal-content {margin-top:15px;}
+	/***** Home Content Ends *****/
+	
+	
+}
+
+@media only screen and (min-width: 480px) {
+	/***** Home Content Starts *****/
+	.best-mortgage {display: block;}
+	/***** Home Content Ends *****/	
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {	
+	/***** Home Content Starts *****/
+	.best-mortgage {display: none;}
+	.google-adv {max-width: 336px;overflow-x: scroll;}
+	.realtor > img {width: 21%;}
+	.footer-container .main-menu ul, .footer-container h5.mobile-menu {width: 70%;}
+	/***** Home Content Ends *****/
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+}
+
+@media only screen and (max-width : 319px) {
+	
+}

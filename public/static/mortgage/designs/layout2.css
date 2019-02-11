@@ -1,0 +1,64 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+}
+@media only screen and (min-width: 768px) {
+	
+	
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.free-tools-left{width:68%;}
+.mortgages-outer textarea{width:100%;}
+.mortgages-outer iframe { width: 100% !important;}
+	.mortgages-outer fieldset{width:100%!important;}
+	.mortgage-widget-left{padding-right: 10px;}
+	.mortgage-widget-right{padding-left: 10px;}
+	.preview,.default-widget{overflow-x: scroll;}
+	.free-tools-right{width:28.44%;}
+	.main-menu ul li a::before{left: 7px;}
+	.main-menu ul li a{padding-left: 20px;font-size: 11px;}
+	.form-group-right select{width:47px;}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.free-tools-left{width:100%;margin-right: 0;}
+	.free-tools-right{width:100%;margin-right: 0;padding: 0;margin-bottom: 20px;}
+	.steps-to-install-image{width:100%;margin-top: 20px;}
+	.steps-to-install-content{width:100%;}
+	.free-tools-content-left{width:100%;}
+	.free-tools-content-right{width:100%;padding: 0;}
+	.free-tools h2{margin-bottom: 5px;}
+	.free-tools-right-inner {margin: 0 auto;max-width: 220px;width: 100%;}
+	.mortgage-widget-left{width:100%;}
+	.mortgage-widget-right{width:100%;}
+	.mortgages-outer textarea{width:100%;}
+	.mortgages-outer iframe { width: 100% !important;}
+	.mortgages-outer fieldset{width:100%!important;}
+	.steps-to-install-content ol{list-style-position: inside;}
+
+}
+
+@media only screen and (min-width: 480px) {
+	
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {	
+	.preview,.default-widget{overflow-x: scroll;}
+	.mortgages-outer iframe { width: auto!important;}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+	
+}
+
+@media only screen and (max-width : 319px) {
+	
+}

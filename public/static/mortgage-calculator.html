@@ -1,0 +1,127 @@
+<html class="js-ready">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Mortgage Calculator</title>
+    <meta name="description" content="Check out the web's best free mortgage calculator to save money on your home loan today. Estimate your monthly payments with PMI, taxes, homeowner's insurance, HOA fees, current loan rates &amp; more. Also offers loan performance graphs, biweekly savings comparisons and easy to print amortization schedules. Our calculator includes amoritization tables, bi-weekly savings estimates, refinance info, current rates and helpful tips. This site also provides users with many helpful online financial planning tools."/>
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.mortgagecalculator.org/" />
+    <!-- Place this render call where appropriate -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- design -->
+    <link href="/static/mortgage/designs/import.css" rel="stylesheet"/>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <!-- END OF TAG FOR head SECTION -->
+    <!-- JS charts -->
+  </head>
+  <body data-pin-hover="true">
+    <!--Begin header section-->
+    <header class="header-container">
+      <div class="wrapper">
+        <div class="logo"></div>
+      </div>
+    </header>
+    <!--End header section-->
+    <!--Begin Content section-->
+    <div class="cal-left-box">
+      <div class="calcu-block">
+        <div class="rw-box">
+          <label class="left-cell" for="homeval"> Home Value: </label>
+          <input id="homeval" class="right-cell" type="number" step="any" name="param[homevalue]" value="300000" placeholder="300000" size="10" tabindex="1"/>
+          <span class="symbol">$</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="downpayment"> Down payment: </label>
+          <input id="downpayment" class="right-cell" type="number" step="any" name="param[downpayment]" value="60000" placeholder="60000" size="10" tabindex="2"/>
+          <span class="inline_radio symbol">
+            <label>
+              <input type="radio" name="param[downpayment_type]" value="money" checked="checked"/>$
+                                
+                      
+              
+            </label>
+            <label>
+              <input type="radio" name="param[downpayment_type]" value="percent"//>%
+                                  
+                        
+              
+            </label>
+          </span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="loanamt"> Loan Amount: </label>
+          <input id="loanamt" class="right-cell" type="number" step="any" name="param[principal]" value="240000" size="10" tabindex="3"/>
+          <span class="symbol">$</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="intrstsrate"> Interest Rate: </label>
+          <input type="number" step="any" id="intrstsrate" class="right-cell" name="param[interest_rate]" value="5" placeholder="5" size="4" tabindex="3"/>
+          <span class="symbol">%</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="loanterm"> Loan Term: </label>
+          <input id="loanterm" class="right-cell" type="number" name="param[term]" value="30" placeholder="30" size="4" tabindex="4"/>
+          <span class="symbol">years</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="start_year"> Start Date: </label>
+          <select name="param[start_month]">
+            <option value="1">Jan</option>
+            <option value="2" selected="selected">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+          <input id="start_year" class="right-cell" type="number" step="any" name="param[start_year]" value="2019" placeholder="2019" size="10" tabindex="5"/>
+          <!--                            <select class="right-cell sel-right-space" id="startmmonth" name="param[start_month]"></select><select class="right-cell sel-right-space" id="startyr"  name="param[start_year]"></select> -->
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="pptytax"> Property Tax: </label>
+          <input id="pptytax" class="right-cell" type="number" step="any" name="param[property_tax]" value="2400" placeholder="2400" size="4" tabindex="6"/>
+          <span class="symbol">$/yr</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="pmi"> PMI: </label>
+          <input id="pmi" class="right-cell" type="number" step="any" name="param[pmi]" value="0.5" placeholder="0.5" size="4" tabindex="7"/>
+          <span class="symbol">%</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="hoi">Home Ins:</label>
+          <input id="hoi" class="right-cell" type="number" step="any" name="param[hoi]" value="1000" placeholder="1000" size="4" tabindex="8"/>
+          <span class="symbol">$/yr</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="hoa">Monthly HOA:</label>
+          <input id="hoa" class="right-cell" type="number" step="any" name="param[hoa]" value="0" placeholder="0" size="4" tabindex="9"/>
+          <span class="symbol">$</span>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="loantype">Loan Type:</label>
+          <select name="param[refiorbuy]">
+            <option label="Buy" value="1" selected="selected">Buy</option>
+            <option label="Refi" value="2">Refi</option>
+          </select>
+        </div>
+        <div class="rw-box">
+          <label class="left-cell" for="militaryservice">Military Service?</label>
+          <select name="param[milserve]">
+            <option label="No" value="1" selected="selected">No</option>
+            <option label="Yes" value="2">Yes</option>
+          </select>
+        </div>
+        <div class="rw-box button">
+          <input type="submit" tabindex="10" value="Calculate" class="styled-button" name="cal"/>
+        </div>
+      </div>
+    </div>
+    <div id="cboxOverlay" style="display: none;"></div>
+  </body>
+</html>

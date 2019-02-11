@@ -1,0 +1,348 @@
+.free-tools-outer{
+	padding-top: 16px;
+	margin-bottom: 50px;
+}
+.free-tools{
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+    font-size: 13px;
+    padding-top: 16px;
+}
+.free-tools-left{
+	background-color: #ffffff;
+    border-right: 1px dotted #dcdcdc;
+    float: left;
+    margin-right: 20px;
+    padding: 0 20px;
+    width:71.11%;
+}
+.free-tools-right{
+	width:26.44%;
+	float: right;
+	padding-right: 20px;
+}
+.free-tools-content{
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+	border-bottom: 1px dotted #e4e4e4;
+    padding-bottom: 10px;
+}
+.free-tools-content-left{
+	width:66.66666666666666%;
+	float: left;
+}
+.free-tools-content-right{
+	width:26.666666666666668%;
+	float: right;
+	text-align: center;
+}
+.steps-to-install-content{
+	width:70%;
+	float: left;
+}
+.steps-to-install{
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+}
+.steps-to-install-image{
+	width:26.666666666666668%;
+	float: right;
+	text-align: center;
+}
+.steps-to-install-content ol {
+    color: #c73333;
+    font-size: 20px;
+    font-weight: bold;
+      list-style: outside none decimal;
+      margin-top: 20px;
+      padding-left: 40px;
+}
+.steps-to-install-content ol li {
+    border-bottom: 1px dotted #e4e4e4;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+      list-style: decimal;
+}
+.steps-to-install-content ol li span{
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.steps-to-install-content ol li span strong {
+    color: #198fc5;
+}
+.free-tools .note {
+    background-color: #f8f2df;
+    border: 1px solid #f3e4b5;
+    color: #92855d;
+    font-size: 12px;
+    margin: 4px 0 12px;
+    padding: 8px 12px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+.free-tools h2 {
+    color: #c73333;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 2px;
+    padding: 0;
+}
+.calculateor-block-outer {
+    float: left;
+    width: 100%;
+}
+.free-tools .clip_button {
+    background: url("https://www.mortgagecalculator.org/free-tools/images/button-copy-to-clipboard.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    height: 31px;
+    margin-top: 4px;
+    width: 160px;
+      cursor: pointer;
+}
+.free-tools .title {
+    border-bottom: 1px dotted #e4e4e4;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+}
+.code-block {
+    float: left;
+    width: 100%;
+}
+.form-title{
+	background-color: #000;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+}
+.form-title p{
+	margin: 0;
+}
+#principal{
+	width:160px;
+	background-color: #f4f7f9;
+    border-bottom: 1px solid #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.75em;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.form-content{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.form-froup{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.free-tools .break {
+    border-bottom: 1px solid #c73333;
+    border-top: 1px solid #cad2d6;
+    font-size: 0;
+    height: 4px;
+    line-height: 0;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    width: 100%;
+    float: left;
+}
+.free-tools textarea {
+    width: 100%;
+}
+.free-tool-bottom{
+	float: left;
+	width: 100%;
+}
+.free-tool-bottom ul{
+	margin: 13px 0;
+	padding-left: 40px;
+	list-style: disc;
+}
+.widget-img{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.form-group-right{
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.form-group-right > label {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    width: 80px;
+}
+.form-submit-right{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.form-submit-bottom{
+	float: left;
+	width: 100%;
+	text-align: center;
+	
+}
+.form-submit-bottom a{
+	text-decoration: underline;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.free-tools .bullet {
+    background-image: url("../images/bullet-arrow.png");
+    background-repeat: no-repeat;
+    margin-left: 18px;
+    padding-left: 18px;
+    float: left;
+	width: 100%;
+}
+.form-submit-bottom div {
+    float: left;
+    font-size: 0.8em;
+    text-align: left;
+    width: 100%;
+}
+
+
+.mortgages-outer{
+	float: left;
+	width: 100%;
+	  margin-bottom: 50px;
+}
+.mortgages-outer .wrapper{
+	max-width: 1156px;
+	margin: 0 auto;
+	width: 100%;
+}
+.main-title{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.main-title h1 {
+    color: #20394c;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+.mortgage-widgets-top{
+	float: left;
+	width: 100%;
+}
+.mortgage-widget-left{
+	float: left;
+	width: 50%;
+}
+.mortgage-widget-right{
+	float: left;
+	width: 50%;
+}
+.mortgages-outer h2{
+	 color: #ed145a;
+    font-weight: 400;
+    margin-top: 1em;
+     font-size: 14px;
+     margin-bottom: 5px;
+}
+.default-text-widget{
+	float: left;
+	width: 100%;
+	
+}
+.default-text-code{
+	float: left;
+	width: 100%;
+	 margin-bottom: 10px;
+}
+.default-code{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.mortgage-widgets-bottom{
+	float: left;
+	width: 100%;
+	border-top:1px solid #cccccc;
+	margin-top: 20px;
+}
+.mortgage-widgets-bottom h1{
+	color: #20394c;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.advanced-text-settings{
+	float: left;
+	width: 100%;
+}
+fieldset {
+    padding: 6px 14px;
+    border:1px solid #ccc;
+    font-size: 12px;
+}
+fieldset p{
+	margin-bottom: 2px;
+}
+.text-preview{
+	margin-top: 12px;
+	float: left;
+	width: 100%;
+}
+.text-last-week-vs-week-before{
+	float: left;
+	width: 100%;
+}
+.text-last-week-vs-week-before{
+	float: left;
+	width: 100%;
+}
+.default-widget{
+	float: left;
+	width: 100%;
+}
+.advanced-text-code{
+	float: left;
+	width: 100%;
+}
+.advanced-settings{
+	float: left;
+	width: 100%;
+}
+.preview{
+	float: left;
+	width: 100%;
+}
+
+.advanced-code{
+	float: left;
+	width: 100%;
+}
+.free-tool-link { float: left;text-align: center;width: 100%;}
+.free-tool-link a{
+	 color: #459ed3;
+	    font-size: 0.8em;
+}
+.normal > input {
+    margin-right: 3px;
+}
+.input-right {
+    margin-right: 4px;
+}
