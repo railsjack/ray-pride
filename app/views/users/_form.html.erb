@@ -1,22 +1,25 @@
-<h1 class="text-center">Signup Form</h1>
+<h1 class="text-center ">Signup Form</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user, url: signup_path, :html => {:autocomplete => "off"}) do |f| %>
+  <%= form_for(@user, url: signup_path,
+             :html => {:autocomplete => "off", class:'mbr-form'}) do |f| %>
 
       <input type="email" style="display:none">
       <input type="password" style="display:none">
 
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control ', :autocomplete => :off %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control ', :autocomplete => :off %>
-
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control ', :autocomplete => :off %>
+      <div class="form-group input-group-sm">
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control ', :autocomplete => :off %>
+      </div>
+      <div class="form-group input-group-sm">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control ', :autocomplete => :off %>
+      </div>
+      <div class="form-group input-group-sm">
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, class: 'form-control ', :autocomplete => :off %>
+      </div>
 
       <%
       options_prefix = {
@@ -31,23 +34,26 @@
       }
       %>
 
-      <div class="container-fluid">
-        <div class="row">
-          <h4>Select a U.S. phone number</h4>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 list-group">
-            <%= f.label :prefix, "Prefix" %>
-            <%= f.select :prefix, options_for_select(options_prefix),{}, {class: 'form-control'} %>
-          </div>
-          <div class="col-sm-6 col-md-6 list-group" style="padding-right: 0;">
-            <%= f.label :number, "Phone number" %>
-            <%= f.select :number, options_for_select(options_number),{}, {class: 'form-control'} %>
-          </div>
+      <h4>Select a U.S. phone number</h4>
+      <div class="col-sm-6 col-md-6 list-group float-left">
+        <%= f.label :prefix, "Prefix" %>
+        <%= f.select :prefix, options_for_select(options_prefix),{}, {class: 'form-control'} %>
+      </div>
+      <div class="col-sm-6 col-md-6 list-group float-right" style="padding-right: 0;">
+        <%= f.label :number, "Phone number" %>
+        <%= f.select :number, options_for_select(options_number),{}, {class: 'form-control'} %>
+      </div>
+      <div class="form-group"><p>&nbsp;</p></div>
+      <div class="form-group list-group ">
+        <%= f.submit "Create my account",
+                     class: "btn btn-primary btn-sm float-left" %>
+        <div class="float-right col-sm-5 col-md-5 ">
+          Already signed up?
+          <%=link_to "Log in", login_path, class: '' %>
         </div>
       </div>
-      <%= f.submit "Create my account", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
+      <div class="clearfix"></div>
+
+<% end %>
+
 

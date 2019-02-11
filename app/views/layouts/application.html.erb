@@ -5,7 +5,7 @@
 
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-  <link rel="shortcut icon" href="assets/images/ray-122x217.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/ray-122x217.png" type="image/x-icon">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,163 +34,190 @@
 
 <body>
 
-  <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
-      <div class="menu-logo">
-        <div class="navbar-brand" data-turbolinks="false">
+<section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+  <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="menu-logo">
+      <div class="navbar-brand" data-turbolinks="false">
                     <span class="navbar-logo">
                         <a href="/">
-                             <img src="assets/images/ray-122x217.png" class="rounded"
+                             <img src="/assets/images/ray-122x217.png" class="rounded"
                                   alt="Mobirise" title="" style="height: 3.8rem;">
                         </a>
                     </span>
-          <span class="navbar-caption-wrap">
+        <span class="navbar-caption-wrap">
             <a class="navbar-caption text-white display-4" href="/">
                             Ray Pride's Porfolio</a></span>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"
+        data-turbolinks="false">
+        <li class="nav-item">
+          <a class="nav-link link text-white display-4" href="#top">
+            <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+            Home
+            <br>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link text-white display-4" href="/#header16-f">
+            <span class="mbri-code mbr-iconfont mbr-iconfont-btn"></span>
+            Experiences
+            <br>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link link text-white dropdown-toggle display-4" href="#progress-bars1-8" data-toggle="dropdown-submenu" aria-expanded="false">
+            <span class="mbri-like mbr-iconfont mbr-iconfont-btn"></span>Skills
+          </a>
+          <div class="dropdown-menu">
+            <a class="text-white dropdown-item display-4" href="/#progress-bars1-8">Professional
+              Skills</a>
+            <a class="text-white dropdown-item display-4" href="/#progress-bars1-h">Frameworks &amp;
+              Tools</a>
+            <a class="text-white dropdown-item display-4" href="/#progress-bars1-i">Programming</a>
+            <a class="text-white dropdown-item display-4" href="/#progress-bars1-j">Server &amp;
+              Networking</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link text-white display-4" href="/#counters5-m">
+            <span class="mbri-add-submenu mbr-iconfont mbr-iconfont-btn"></span>API
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link text-white display-4" href="/#form1-n">
+            <span class="mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Contact
+            Me
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link link text-white dropdown-toggle display-4" href="/#counters5-m" data-toggle="dropdown-submenu" aria-expanded="false">
+            <span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span>
+          </a>
+          <div class="dropdown-menu" data-turbolinks="false">
+            <% if logged_in2? %>
+              <a class="text-white dropdown-item display-4" href="/#counters5-m">Profile</a>
+              <a class="text-white dropdown-item display-4" href="/#counters5-m">Settings</a>
+              <a class="text-white dropdown-item display-4" href="<%=logout_url %>">Logout</a>
+            <% else %>
+              <a class="text-white dropdown-item display-4" href="<%=login_url %>">Log in</a>
+              <a class="text-white dropdown-item display-4" href="<%=signup_url %>">Register</a>
+            <% end %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<%= yield %>
+
+<section class="cid-qTkAaeaxX5 mbr-reveal" id="footer1-2">
+
+
+  <div class="container">
+    <div class="media-container-row content text-white">
+      <div class="col-12 col-md-3">
+        <div class="media-wrap">
+          <a href="https://ray-pride.herokuapp.com/">
+            <img src="/assets/images/ray-122x217.png" alt="Mobirise" title="" class=" img-thumbnail">
+          </a>
         </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-        <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-          <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="#top">
-              <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-              Home<br></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="index.html#header16-f"><span class="mbri-code mbr-iconfont mbr-iconfont-btn"></span>
-              Experiences<br></a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link link text-white dropdown-toggle display-4" href="index.html#progress-bars1-8" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-like mbr-iconfont mbr-iconfont-btn"></span>Skills</a>
-            <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="index.html#progress-bars1-8">Professional
-              Skills</a><a class="text-white dropdown-item display-4" href="index.html#progress-bars1-h">Frameworks &amp;
-              Tools</a><a class="text-white dropdown-item display-4" href="index.html#progress-bars1-i">Programming</a><a class="text-white dropdown-item display-4" href="index.html#progress-bars1-j">Server &amp;
-              Networking</a></div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="index.html#counters5-m"><span class="mbri-add-submenu mbr-iconfont mbr-iconfont-btn"></span>API</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link text-white display-4" href="index.html#form1-n"><span class="mbri-contact-form mbr-iconfont mbr-iconfont-btn"></span>Contact
-              Me</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link link text-white dropdown-toggle display-4" href="index.html#counters5-m" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-users mbr-iconfont mbr-iconfont-btn"></span></a>
-            <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="index.html#counters5-m">Log
-              in<br></a><a class="text-white dropdown-item display-4" href="index.html#counters5-m">Register</a><a class="text-white dropdown-item display-4" href="index.html#counters5-m">Profile</a><a class="text-white dropdown-item display-4" href="index.html#counters5-m">Settings</a><a class="text-white dropdown-item display-4" href="index.html#counters5-m">Logout</a>
+      <div class="col-12 col-md-3 mbr-fonts-style display-7">
+        <h5 class="pb-3">
+          Address
+        </h5>
+        <p class="mbr-text">Chestnut Ridge, NY 10977<br>New York, United States</p>
+      </div>
+      <div class="col-12 col-md-3 mbr-fonts-style display-7">
+        <h5 class="pb-3">
+          Contacts
+        </h5>
+        <p class="mbr-text">
+          Email: ray.pride84@gmail.com&nbsp;<br><br></p>
+      </div>
+      <div class="col-12 col-md-3 mbr-fonts-style display-7">
+        <h5 class="pb-3">
+          Links
+        </h5>
+        <p class="mbr-text"><a class="text-primary" href="https://ray-pride.herokuapp.com">Portfolio Website</a><br><br>
+        </p>
+      </div>
+    </div>
+    <div class="footer-lower">
+      <div class="media-container-row">
+        <div class="col-sm-12">
+          <hr>
+        </div>
+      </div>
+      <div class="media-container-row mbr-white">
+        <div class="col-sm-6 copyright">
+          <p class="mbr-text mbr-fonts-style display-7">
+            © Copyright 2019 - Home edition</p>
+        </div>
+        <div class="col-md-6">
+          <div class="social-list align-right" data-turbolinks="false">
+            <div class="soc-item">
+              <a href="https://twitter.com/mobirise" target="_blank">
+                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
             </div>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-  </section>
-
-  <%= yield %>
-
-  <section class="cid-qTkAaeaxX5 mbr-reveal" id="footer1-2">
-
-
-    <div class="container">
-      <div class="media-container-row content text-white">
-        <div class="col-12 col-md-3">
-          <div class="media-wrap">
-            <a href="https://ray-pride.herokuapp.com/">
-              <img src="assets/images/ray-122x217.png" alt="Mobirise" title="" class=" img-thumbnail">
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 mbr-fonts-style display-7">
-          <h5 class="pb-3">
-            Address
-          </h5>
-          <p class="mbr-text">Chestnut Ridge, NY 10977<br>New York, United States</p>
-        </div>
-        <div class="col-12 col-md-3 mbr-fonts-style display-7">
-          <h5 class="pb-3">
-            Contacts
-          </h5>
-          <p class="mbr-text">
-            Email: ray.pride84@gmail.com&nbsp;<br><br></p>
-        </div>
-        <div class="col-12 col-md-3 mbr-fonts-style display-7">
-          <h5 class="pb-3">
-            Links
-          </h5>
-          <p class="mbr-text"><a class="text-primary" href="https://ray-pride.herokuapp.com">Portfolio Website</a><br><br>
-          </p>
-        </div>
-      </div>
-      <div class="footer-lower">
-        <div class="media-container-row">
-          <div class="col-sm-12">
-            <hr>
-          </div>
-        </div>
-        <div class="media-container-row mbr-white">
-          <div class="col-sm-6 copyright">
-            <p class="mbr-text mbr-fonts-style display-7">
-              © Copyright 2019 - Home edition</p>
-          </div>
-          <div class="col-md-6">
-            <div class="social-list align-right" data-turbolinks="false">
-              <div class="soc-item">
-                <a href="https://twitter.com/mobirise" target="_blank">
-                  <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
-              <div class="soc-item">
-                <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-                  <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
-              <div class="soc-item">
-                <a href="https://www.youtube.com/c/mobirise" target="_blank">
-                  <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
-              <div class="soc-item">
-                <a href="https://instagram.com/mobirise" target="_blank">
-                  <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
-              <div class="soc-item">
-                <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
-                  <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
-              <div class="soc-item">
-                <a href="https://www.behance.net/Mobirise" target="_blank">
-                  <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
-                </a>
-              </div>
+            <div class="soc-item">
+              <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
+                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://www.youtube.com/c/mobirise" target="_blank">
+                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://instagram.com/mobirise" target="_blank">
+                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://plus.google.com/u/0/+Mobirise" target="_blank">
+                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="https://www.behance.net/Mobirise" target="_blank">
+                <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <script src="/assets/popper/popper.min.js"></script>
-  <script src="/assets/tether/tether.min.js"></script>
-  <script src="/assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="/assets/dropdown/js/script.min.js"></script>
-  <script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>
-  <script src="/assets/parallax/jarallax.min.js"></script>
-  <script src="/assets/theme/js/script.js"></script>
-  <script src="/assets/formoid/formoid.min.js"></script>
-
-  <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
-    <a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up" )></i></a>
   </div>
-  <input name="animation" type="hidden">
+</section>
+
+<script src="/assets/popper/popper.min.js"></script>
+<script src="/assets/tether/tether.min.js"></script>
+<script src="/assets/smoothscroll/smooth-scroll.js"></script>
+<script src="/assets/dropdown/js/script.min.js"></script>
+<script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="/assets/viewportchecker/jquery.viewportchecker.js"></script>
+<script src="/assets/parallax/jarallax.min.js"></script>
+<script src="/assets/theme/js/script.js"></script>
+<script src="/assets/formoid/formoid.min.js"></script>
+
+<div id="scrollToTop" class="scrollToTop mbr-arrow-up">
+  <a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up" )></i></a>
+</div>
+<input name="animation" type="hidden">
 
 </body>
 </html>

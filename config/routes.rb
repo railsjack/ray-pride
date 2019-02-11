@@ -60,7 +60,7 @@ Rails.application.routes.draw do
   resources :messages
   resources :tracks
   resources :account_activations, only: [:edit]
-  resources :password_resets, only: [:new, :create, :edit, :update, :show]
+  resources :password_resets, only: [:index, :new, :create, :edit, :update, :show]
 
 
   #root "static_pages#home"

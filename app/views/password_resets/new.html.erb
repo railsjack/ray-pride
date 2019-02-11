@@ -1,18 +1,26 @@
-<h3 class="text-center">Reset Password</h3>
-
-<p><br></p>
-
-<section class="body_container">
-  <div class="container">
+<section class="mbr-fullscreen">
+  <div class="container" style="margin-top: -300px;">
+    <% flash.each do |message_type, message| %>
+      <div onclick="this.style.display='none'"
+           class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+    <h3 class="text-center">Reset Password</h3>
+    <br>
     <div class="row">
       <div class="
-      col-md-6 col-md-offset-3
-      col-lg-4 col-lg-offset-4
+      col-md-6 offset-md-3
+      col-lg-6 offset-lg-3
       ">
-        <%=form_for :password_resets, url: password_resets_path do |f| %>
-          <%=f.label :email, "Enter your email address here." %>
-          <%=f.email_field :email, class: "form-control" %>
-          <%=f.submit "Reset password", class: 'btn btn-success' %>
+        <%=form_for :password_resets, url: password_resets_path,
+                    html: {class: 'mbr-form'} do |f| %>
+          <div class="form-group input-group-sm">
+            <%=f.label :email, "Enter your email address here." %>
+            <%=f.email_field :email, class: "form-control" %>
+          </div>
+          <div class="">
+            <%=f.submit "Reset password",
+                        class: 'btn-form btn btn-primary btn-sm btn-block' %>
+          </div>
         <% end %>
       </div>
     </div>

@@ -1,11 +1,13 @@
 <% provide(:title, "Signup") %>
-<%= render 'form', user: @user %>
-<br>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div class="pull-right">
-      Already signed up?
-      <%=link_to "Log in", login_path %>
+<div class="mbr-fullscreen " style="background-color: white;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <%= render 'form', user: @user %>
+
+      </div>
     </div>
+
   </div>
+
 </div>
